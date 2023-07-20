@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrazione</title>
+    <link rel="stylesheet" href="sito.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="logo.png"></div>
+        <div class="link">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="">Contattaci</a></li>
+                <li><a href="">Chi siamo</a></li>
+                <li><a href="">Album</a></li>
+            </ul>
+           
+            
+        </div>
+     <div class="button"><a href="./form.html" target="_blank"><button class="button2">REGISTRATI</button></a></div>
+    </nav>
+    <fieldset>
+        <legend>Registrazione</legend>
+        <form method="post" action="inserimento">
+        <table>
+            <tr>
+                <td colspan="2"><h5>Dati personali</h5></td>
+            </tr>
+            <tr>
+                <td><label for="name">Nome</label></td>
+                <td><input type="text" name="nome" placeholder="Inserisci il tuo nome"></td>
+            </tr>
+            <tr>
+                <td><label for="cognome">Cognome</label></td>
+                <td><input type="text" name="cognome" placeholder="Inserisci il tuo cognome"></td>
+            </tr>
+            <tr>
+                <td><label for="sesso">Sesso</label></td>
+                <td><input type="radio" name="sesso" value="M">M<input type="radio" name="sesso" value="F">F</td>
+            </tr>
+            <tr>
+                <td><label for="data_di_nascita">Data di nascita</label></td>
+                <td><input type="date" name="data_di_nascita"></td>
+            </tr>
+            <tr>
+                <td><label for="codice_fiscale">Codice fiscale</label></td>
+                <td><input type="text" name="codice_fiscale" placeholder="inserisci il codice fiscale"> <button>Genera</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><h5>Residenza e contatti</h5></td>
+            </tr>
+            <tr>
+                <td><label for="provincia">Provincia</label></td>
+                <td>
+                    <select name="provincia">
+                        <option>Scegli</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="comune">Comune</label></td>
+                <td>
+                    <select name="comune">
+                        <option>Scegli</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="indirizzo">Indirizzo</label>
+                </td>
+                <td>
+                    <input type="text" name="indirizzo" placeholder="Inserisci il tuo indirizzo">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="numero_civ">N.civico</label>
+                </td>
+                <td>
+                    <input type="text" name="numero_civ" placeholder="Inserisci il tuo numero civico">
+                    <label for="CAP">CAP</label>
+                    <input type="text" name="CAP" placeholder="Inserisci il tuo cap">
+                </td> 
+            </tr>
+            <tr>
+                <td><label for="cellulare">Cellulare</label></td>
+                <td>
+                    <select name="cellulare">
+                        <option>+39</option>
+                    </select>
+                    <input type="text">
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="mail" name="email" placeholder="Inserisci la tua mail">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="conf-email">Conferma Email</label>
+                </td>
+                <td>
+                    <input type="mail" name="conf-email" placeholder="Conferma la tua email">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><h5>Dati di accesso</h5></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="username">Scegli Username</label>
+                </td>
+                <td>
+                    <input type="text" name="username" placeholder="inserisci l'username">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Scegli la password</label>
+                </td>
+                <td>
+                    <input type="password" name="password" placeholder="inserisci la password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="conf-password">Conferma password</label>
+                </td>
+                <td>
+                    <input type="password" name="conf-password" placeholder="inserisci la password">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="domanda">Domanda di sicurezza</label></td>
+                <td>
+                    <select name="domanda">
+                        <option>Scegli</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="risposta">Risposta di sicurezza</label>
+                </td>
+                <td>
+                    <input type="text" name="risposta" placeholder="inserisci la risposta">
+                </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>
+                   <button type="reset">CANCELLA</button> 
+                </td>
+                <td>
+                    <button type="submit">REGISTRATI</button> 
+                 </td>
+            </tr>
+        </table>
+    </form>
+    </fieldset>
+    <footer>
+        <div class="contatti">
+            <img src="fti.png" alt="">
+        </div>
+        <div class="newsletter">
+            <form method="post">
+                <label for="email">Iscrizione alla newsletter</label>
+                <input type="email" name="email">
+                
+                    <button type="submit">Iscriviti</button>
+                
+            </form>
+        </div>
+        <div class="indirizzo">
+            <p>
+            Via vai via n11, Palermo 90100 </p>
+            <p> tel 091234567</p>
+           
+            <p>email@email.com</p>
+      
+    </div>
+        
+    </footer>
+</body>
+</html>
